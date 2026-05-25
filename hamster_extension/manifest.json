@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "🐹 햄스터 동료",
+  "version": "1.0",
+  "description": "타자를 치면 함께 달려주는 귀여운 햄스터 동료!",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["hamster.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*.png"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "images/flat.png",
+    "48": "images/flat.png",
+    "128": "images/flat.png"
+  }
+}

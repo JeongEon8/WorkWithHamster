@@ -1,0 +1,22 @@
+#hamster-overlay-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+  z-index: 2147483647;
+  pointer-events: auto;
+  user-select: none;
+  cursor: grab;
+}
+
+#hamster-overlay-container:active {
+  cursor: grabbing;
+}
+
+#hamster-overlay-container img {
+  width: 120px;
+  height: 120px;
+  display: block;
+  image-rendering: pixelated;
+}
